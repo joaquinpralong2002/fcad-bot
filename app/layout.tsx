@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
+import dynamic from "next/dynamic";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,14 @@ export default function RootLayout({
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />
+        <script
+          src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"
+          defer
+        ></script>
+        <script
+          src="https://files.bpcontent.cloud/2025/10/19/19/20251019193303-NCT0Q9Q9.js"
+          defer
+        ></script>
       </body>
     </html>
   );
