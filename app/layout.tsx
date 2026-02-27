@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
-import dynamic from "next/dynamic";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +24,7 @@ export default function RootLayout({
         {children}
         <Analytics />
         <script
-          src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"
+          src="https://cdn.botpress.cloud/desk/webchat/v4.0/inject.js"
           defer
         ></script>
         <script
